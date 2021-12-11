@@ -1,0 +1,98 @@
+
+header{
+    background-color: rgb(81, 112, 133);
+    color: rgb(39, 17, 163);
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+
+#logo{
+    padding: 0.5em 1em 1em 1em;
+    height: 100px;
+    width: 100px;
+    position: static;
+}
+
+body{
+    background-color: rgb(147, 188, 204);
+    padding:10px;
+    margin:10px 0;
+    text-align: center;
+}
+
+#corner{
+    border-radius: 25px;
+    background-color: rgb(115, 147, 168);
+    padding: 20px; 
+    width: 1100px;
+    height: 150px;  
+}
+
+#toph1{
+    position: relative;
+    padding:10px;
+    top:-40px;
+    text-align: center;
+}
+
+label{
+    display: inline-block;
+    width: 150px;
+}
+
+.sidenav {
+    height: 90%; 
+    width: 200px; 
+    position: fixed; 
+    z-index: 1;
+    top: 0; 
+    left: 0;
+    background-color: rgb(115, 147, 168);
+    overflow-x: hidden; 
+    padding-top: 20px;
+    border-radius: 10px;
+  }
+
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #020202;
+    display: block;
+}
+footer{
+    color: rgb(39, 17, 163);
+    text-align: center;
+    border-radius: 25px;
+    background-color: rgb(115, 147, 168);
+    padding: 5px; 
+    height: 100px;  
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    margin-top: 5em;
+    bottom: 0;
+}
+
+
+input[type='radio'], label{
+    vertical-align: baseline;
+    padding: 2.5px;
+    margin: 5px;
+}
+
+.newcss{
+    width: 400px;
+    text-align: left;
+    margin: auto;
+}
+
+p{
+    padding-left: 9px;
+}
+
+#submitbutton{
+    text-align: center;
+}

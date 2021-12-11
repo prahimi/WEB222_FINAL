@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pasha Rahimi</title>
+        <meta charset="UTF-8" />
+        <script src="info.js"></script> 
+        <link rel="stylesheet" href="normalize.css"/>
+    </head>
+</html>
+
+<body>
+    <header id="corner">
+        <img id="logo" src="lion.jpg">
+        <h1 id="toph1">SignUp Form</h1>
+    </header>
+
+<main>
+    <div class="sidenav">
+        <a href="honesty.html">Honesty</a>
+        <a href="info.html">Info</a>
+        <a href="reflection.html">Reflection</a>
+      </div>
+
+    <div class="newcss">
+        <p>Welcome to DunderMifflin Paper! Create an account below!</p>
+
+        <form
+        onsubmit="return validateForm()"
+        name = "signup"
+        action ="https://httpbin.org/post"
+        method="post"
+        >
+        <input type="hidden" name="lastName" id="lastName" value="Rahimi" />
+        <input type="hidden" name="studentId" id="studentId" value="033028127" />
+
+        <label for="firstname">First Name: </label>
+        <input id="firstname" name="fname" type="text"
+        required pattern="[A-Z][A-Z, a-z]*"
+        placeholder="First letter must be caps"/>
+        <br>
+        <label for="lastname">Last Name: </label>
+        <input id="lastname" name="lname" type="text"
+        required pattern="[A-Z][A-Z, a-z]*"
+        placeholder="First letter must be caps"/>
+        <br>
+        <label for="password">Password: </label>
+        <input id="password" name="pword" type="password"
+        required placeholder="6 char 1 digit 1 capital"/>
+        <br>
+        <label for="cpassword">Confirm Password: </label>
+        <input id="cpassword" name="cpword" type="password"
+        required placeholder="6 char 1 digit 1 capital"/>
+        <br>
+        <label for="username">Username: </label>
+        <input id="username" name="uname" type="text"
+        required placeholder="Must start with a letter"/>
+        <br>
+        <p>Education Status: </p>
+        <label for="graduated">Graduated</label>
+        <input id="graduated" name="education" type="radio" required/>
+        <br>
+        <label for="enrolled">Currently enrolled</label>
+        <input id="enrolled" name="education" type="radio"/>
+        <br>
+        <label for="NotGraduated">Did not graduate</label>
+        <input id="NotGraduated" name="education" type="radio"/>
+        <br>
+        <label for="email">Email: </label>
+        <input id="email" name="email" type="email"
+        required/>
+        <br>
+        <label for="age">Age: </label>
+        <input id="age" name="age" type="number"
+        min="18" max="60"
+        required placeholder="Must be 18-60"/>
+        <br>
+        <div id="submitbutton">
+        <input type="submit" value="Submit"/>
+        </div>
+        </form>
+    </div>
+    <footer>
+        <h5>Pasha Rahimi 2021</h5>
+    </footer>
+</main>
+</body>
